@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "playwright:install": "playwright install",
-    "playwright:test": "yarn dev && playwright test",
+    "playwright:test": "playwright test",
     "playwright:codegen": "playwright codegen http://localhost:3001",
     "playwright:trace": "playwright show-trace ./test-results/tests-initial-test/trace.zip"
   },
