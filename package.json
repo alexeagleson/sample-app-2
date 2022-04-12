@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "playwright:install": "playwright install",
+    "playwright:test": "yarn dev && playwright test",
+    "playwright:codegen": "playwright codegen http://localhost:3001",
+    "playwright:trace": "playwright show-trace ./test-results/tests-initial-test/trace.zip"
   },
   "dependencies": {
     "antd": "^4.19.5",
@@ -17,6 +21,7 @@
     "tsdx-sample-component-library": "^0.1.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.21.0",
     "@testing-library/react": "^13.0.1",
     "@types/jest": "^27.4.1",
     "@types/node": "17.0.23",
