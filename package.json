@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^4.19.5",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "tsdx-sample-component-library": "^0.1.4"
+    "tsdx-sample-component-library": "^0.1.8"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
