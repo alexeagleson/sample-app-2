@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { Button } from "tsdx-sample-component-library";
+import App1Component from "../components/App1Component";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -12,6 +13,8 @@ const Home: NextPage = () => {
       </p>
 
       <Button>Component Library Button</Button>
+
+      <App1Component />
     </div>
   );
 };
